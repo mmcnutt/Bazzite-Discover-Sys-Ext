@@ -38,7 +38,7 @@ sudo chmod +x /usr/local/bin/podman
 
 pull my simple just and container files
 ```bash
-git https://github.com/mmcnutt/Bazzite-Discover-Sys-Ext.git
+git clone https://github.com/mmcnutt/Bazzite-Discover-Sys-Ext.git
 
 cd Bazzite-Discover-Sys-Ext/plasma-discover
 
