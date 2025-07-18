@@ -5,6 +5,8 @@ I restored Discover to my Bazzite install using a Systemd-Sysext. Essentially a 
 
 No shade to the bazaar devs, but on plasma it looks really out of place!
 
+**It's hard to break your system with this, but if you do, not my fault**
+
 # Build the Sys-Ext
 
 You will need a Distrobox container unbound by selinux
