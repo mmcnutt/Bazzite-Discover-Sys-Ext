@@ -56,3 +56,11 @@ and copy our disk image from earlier into /var/lib/extensions
 sudo cp plasma-discover.raw /var/lib/extensions/
 ```
 reboot and if all goes well, discover should be returned to your system
+
+# Uninstall
+
+Delete the raw file from /var/lib/extensions and then reboot
+
+# This is too hard
+
+I put my current raw file in the releases page, but I wont necessarily update it there and I'd prefer you built it yourself. It's good digital hygene and you just might learn a thing
