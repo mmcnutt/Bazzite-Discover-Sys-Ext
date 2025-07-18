@@ -1,5 +1,5 @@
 # Bazzite-Discover-Sys-Ext
-Instructions to add Plasma Discover package manager back into Bazzite using a Systemd Sys-Ext. Based on Travier's Fedora Sys-Ext work at https://travier.github.io/fedora-sysexts/ 
+Instructions to add Plasma Discover package manager back into Bazzite using a Systemd Sys-Ext. Based on Travier's Fedora Sys-Ext work at https://travier.github.io/fedora-sysexts/ and relies on his base images on quay.
 
 I restored Discover to my Bazzite install using a Systemd-Sysext. Essentially a sub disk image that is loaded during boot of the immutable system, that way you dont have to layer all the plasma components this would usually require! Layering 400mb worth of plasma stuff everytime you do an update to Bazzite is not fun and slows your updates down. Smarter people than me can explain it better
 
