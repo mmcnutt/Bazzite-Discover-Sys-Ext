@@ -31,9 +31,9 @@ exec flatpak-spawn --host "${executable}" "${@}"
 
 sudo chmod +x /usr/local/bin/podman
 ```
-```bash
-pull my simple just and container files
 
+pull my simple just and container files
+```bash
 git https://github.com/mmcnutt/Bazzite-Discover-Sys-Ext.git
 
 cd Bazzite-Discover-Sys-Ext/plasma-discover
