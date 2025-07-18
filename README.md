@@ -9,7 +9,7 @@ No shade to the bazaar devs, but on plasma it looks really out of place!
 
 # Build the Sys-Ext
 
-You will need a Distrobox container unbound by selinux
+You will need a toolbox/Distrobox container unbound by selinux, I will not go into installing distrobox or toolbox here
 ```bash
 distrobox create --name sysex --image registry.fedoraproject.org/fedora-toolbox:42 --additional-flags "--security-opt label=disable"
 ```
