@@ -17,7 +17,9 @@ distrobox create --name sysex --image registry.fedoraproject.org/fedora-toolbox:
 on your host (not the container) set selinux to permissive for good measure
 ```bash
 sudo setenforce 0
-
+```
+Enter the distrobox container
+```bash
 distrobox enter sysex
 ```
 install some dependencies
