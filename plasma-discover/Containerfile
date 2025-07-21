@@ -2,6 +2,10 @@ FROM baseimage
 
 RUN <<EORUN
 set -xeuo pipefail
-dnf install -y plasma-discover
+dnf install -y \
+plasma-discover \
+plasma-discover-kns \
+plasma-discover-rpm-ostree \
+plasma-discover-notifier
 dnf clean all
 EORUN
