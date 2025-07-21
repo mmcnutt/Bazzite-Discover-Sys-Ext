@@ -7,6 +7,8 @@ No shade to the bazaar devs, but on plasma it looks really out of place!
 
 **It's hard to break your system with this, but if you do, not my fault**
 
+**since the last bazzite compose my test machine segfaults discover about 50% of the time, not sure why yet**
+
 # Build the Sys-Ext
 
 You will need a toolbox/Distrobox container unbound by selinux, I will not go into installing distrobox or toolbox here
