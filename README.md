@@ -44,7 +44,9 @@ git clone https://github.com/mmcnutt/Bazzite-Discover-Sys-Ext.git
 
 cd Bazzite-Discover-Sys-Ext/plasma-discover
 
-just build quay.io/fedora-ostree-desktops/base-atomic:42 x86_64
+just build quay.io/fedora-ostree-desktops/kinoite:42 x86_64
+
+#just build quay.io/fedora-ostree-desktops/base-atomic:42 x86_64
 ```
 If that build works you should get a raw disk image file called something like plasma-discover-6.4.3-1.fc42-42-x86-64.raw depending on what version Fedora is up to
 ```
