@@ -19,7 +19,7 @@ Adds back:
 
 I put my current raw file in the releases page, but I wont necessarily update it there and I'd prefer you built it yourself. 
 
-Todo - do a build and isntall script
+Todo - do a build and install script
 
 Enable sysexts if not already
 
