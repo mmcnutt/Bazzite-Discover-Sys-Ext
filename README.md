@@ -1,13 +1,19 @@
 # Bazzite-Discover-Sys-Ext
 Instructions to add Plasma Discover package manager back into Bazzite using a Systemd Sys-Ext. Based on Travier's Fedora Sys-Ext work at https://travier.github.io/fedora-sysexts/ and relies on his base images on quay.
 
-I restored Discover to my Bazzite install using a Systemd-Sysext. Essentially a sub disk image that is loaded during boot of the immutable system, that way you dont have to layer all the plasma components this would usually require! Layering 400mb worth of plasma stuff everytime you do an update to Bazzite is not fun and slows your updates down. Smarter people than me can explain it better
+I restored Discover to my Bazzite install using a Systemd-Sysext. No shade to the bazaar and Bazzite devs, they do good work! 
 
-No shade to the bazaar devs, but on plasma it looks really out of place!
+I chose to use a Sysext as it is a more efficient way to add packages to an Atomic Distro than Layering, which requires the system to redownload and install the packages everytime you apply a new snapshot!
+
+Adds back:
+* Plasma Discover App
+* rpm-ostree backend - this will allow you to fire system ostree snapshot updates from discover if you choose
+* Access to KNew Stuff items
+* Leaves Bazaar in place if you also want it available
 
 **It's hard to break your system with this, but if you do, not my fault**
 
-**since the last bazzite compose my test machine segfaults discover about 50% of the time, not sure why yet**
+**I have fixed the segfaulting issue and updated the prepackaged version to 6.4.4**
 
 # Build the Sys-Ext
 
