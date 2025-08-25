@@ -6,6 +6,8 @@ dnf install -y \
 plasma-discover \
 plasma-discover-kns \
 plasma-discover-rpm-ostree \
+plasma-discover-libs \
+plasma-discover-flatpak \
 plasma-discover-notifier
 dnf clean all
 EORUN
