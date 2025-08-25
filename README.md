@@ -15,6 +15,28 @@ Adds back:
 
 **I have fixed the segfaulting issue and updated the prepackaged version to 6.4.4 and reduced its size by building against Kinoite image istead of coreOS**
 
+# Quick Install Instructions
+
+I put my current raw file in the releases page, but I wont necessarily update it there and I'd prefer you built it yourself. 
+
+Todo - do a build and isntall script
+
+Enable sysexts if not already
+
+`sudo install -d -m 0755 -o 0 -g 0 /var/lib/extensions /var/lib/extensions.d
+sudo restorecon -RFv /var/lib/extensions /var/lib/extensions.d
+sudo systemctl enable --now systemd-sysext.service`
+
+Copy raw file from releases to correct folder
+
+`sudo cp plasma-discover.raw /var/lib/extensions/plasma-discover.raw`
+
+restart sysext service, or just reboot
+
+`sudo systemctl restart systemd-sysext.service`
+
+
+
 # Build the Sys-Ext
 
 You will need a toolbox/Distrobox container unbound by selinux, I will not go into installing distrobox or toolbox here
@@ -75,20 +97,3 @@ reboot and if all goes well, discover should be returned to your system
 
 Delete the raw file from /var/lib/extensions and then reboot
 
-# This is too hard
-
-I put my current raw file in the releases page, but I wont necessarily update it there and I'd prefer you built it yourself. It's good digital hygene and you just might learn a thing
-
-Enable sysexts if not already
-
-`sudo install -d -m 0755 -o 0 -g 0 /var/lib/extensions /var/lib/extensions.d
-sudo restorecon -RFv /var/lib/extensions /var/lib/extensions.d
-sudo systemctl enable --now systemd-sysext.service`
-
-Copy raw file from releases to correct folder
-
-`sudo cp plasma-discover.raw /var/lib/extensions/plasma-discover.raw`
-
-restart sysext service, or just reboot
-
-`sudo systemctl restart systemd-sysext.service`
