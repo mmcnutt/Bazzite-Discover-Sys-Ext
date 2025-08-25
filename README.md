@@ -13,7 +13,7 @@ Adds back:
 
 **It's hard to break your system with this, but if you do, not my fault**
 
-**I have fixed the segfaulting issue and updated the prepackaged version to 6.4.4**
+**I have fixed the segfaulting issue and updated the prepackaged version to 6.4.4 and reduced its size by building against Kinoite image istead of coreOS**
 
 # Build the Sys-Ext
 
