@@ -78,3 +78,17 @@ Delete the raw file from /var/lib/extensions and then reboot
 # This is too hard
 
 I put my current raw file in the releases page, but I wont necessarily update it there and I'd prefer you built it yourself. It's good digital hygene and you just might learn a thing
+
+Enable sysexts if not already
+
+`sudo install -d -m 0755 -o 0 -g 0 /var/lib/extensions /var/lib/extensions.d
+sudo restorecon -RFv /var/lib/extensions /var/lib/extensions.d
+sudo systemctl enable --now systemd-sysext.service`
+
+Copy raw file from releases to correct folder
+
+`sudo cp plasma-discover.raw /var/lib/extensions/plasma-discover.raw`
+
+restart sysext service, or just reboot
+
+`sudo systemctl restart systemd-sysext.service`
