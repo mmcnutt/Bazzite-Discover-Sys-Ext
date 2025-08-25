@@ -4,12 +4,15 @@ plasma-discover
 plasma-discover-kns
 plasma-discover-rpm-ostree
 plasma-discover-notifier
+plasma-discover-libs
+plasma-discover-flatpak
 "
 base_images := "
-#quay.io/fedora-ostree-desktops/base-atomic:41 x86_64,aarch64
-#quay.io/fedora-ostree-desktops/base-atomic:42 x86_64,aarch64
+quay.io/fedora-ostree-desktops/base-atomic:41 x86_64,aarch64
+quay.io/fedora-ostree-desktops/base-atomic:42 x86_64,aarch64
 quay.io/fedora-ostree-desktops/kinoite:41 x86_64
 quay.io/fedora-ostree-desktops/kinoite:42 x86_64
+
 "
 
 import '../sysext.just'
